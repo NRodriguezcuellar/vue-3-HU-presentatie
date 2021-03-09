@@ -6,13 +6,11 @@
   <br/>
 
 
-  <div>hook counter: {{ hookCounter}}</div>
-  <button @click="addHookCount">Add count to hook</button>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
-import useCounter from "../hooks/useCounter";
+import {defineComponent, ref} from "vue";
+
 
 
 export default defineComponent({
@@ -22,11 +20,7 @@ export default defineComponent({
     const addCount = () => counter.value++;
 
 
-
-    const {hookCounter, addHookCount} = useCounter()
-
-
-    return { counter, addCount, hookCounter, addHookCount };
+    return {counter, addCount};
   },
 });
 </script>

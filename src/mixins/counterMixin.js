@@ -5,9 +5,7 @@ export default {
         }
     },
     methods:{
-        removeCount(){
-            this.counter--
-        },
+
         addMixinCount(){
           this.mixinCounter++
         }
